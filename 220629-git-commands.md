@@ -1,0 +1,29 @@
+# First day on git class
+
+##Learned
+---
+**Shell Command**  
+ls: list files and directories //어떤 파일이나 폴더가 존재하는지 알 수있음
+cd: change directory //working directory를 바꿀 때 사용 가능
+rm: remove file
+rm -rf: remove directory (rm -rf bin)
+pwd: show present working directory
+mkdir:  make a directory //mkdir "새폴더 이름"
+mv: move // 파일 이름을 바꿀 때 사용 $ mv [FROM] [TO]
+         //파일을 옮길 때도 사용 $ mv [옮길대상][목적지] 
+cp: copy files //$ cp [FROM] [TO] ($ cp style.css ./nav-bar.css)
+touch: creates an empty file // $ touch [FILE]
+
+**Vim command**
+ESC - back to normal mode
+o - open line(under)
+O - open line(upper)
+
+**git command**
+git clone
+git add
+git commit
+git push origin main
+
+## 내일 할 일
+hexo 로 github blog만들기!
