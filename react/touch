@@ -1,0 +1,50 @@
+Learned
+
+
+- JSX is a syntax extention to Javascript
+- It allows to create react elements
+- 하지만 우리의 browser는 JSX는 이해하지 못하기 때문에 extention이 필요함 : **babel**
+    - babel:  a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
+
+```jsx
+const root = document.getElementById("root");
+function Title () {
+	return (
+		<h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+			Hello I'm a title
+		</h3>
+	);
+}
+```
+
+```jsx
+const Button = () => (
+	<button 
+		style={{
+				backgroundColor: "tomato",
+		}}
+		onClick={() => console.log("I am clicked")}>
+	Click me 
+	</button>
+);
+```
+
+```jsx
+const Container = (
+	<div>
+		<Title /> // **Components**
+		<Button /> // **Components**
+	<div>
+);
+ReactDOM.render(Container, root);
+</script>
+</html>
+```
+
+> **All React component names must start with a capital letter**. If you start a component name with a lowercase letter, it will be treated like a built-in element like a <div> or a <span>
+>
+
+
+TO DO LIST 
+1. state
+2. props
